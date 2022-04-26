@@ -27,7 +27,7 @@ Route::post('/createHmo', [HmoController::class, 'store']);
 Route::get('/viewHmos', [HmoController::class, 'index']);
 
 
-Route::post('/createOrder', [OrdersController::class, 'store']);
+Route::post('/createOrder', [OrdersController::class, 'create']);
 
 Route::get('/viewOrders', [OrdersController::class, 'index']);
 
@@ -35,9 +35,7 @@ Route::get('/batchOrders/{id}', [OrdersController::class, 'batchOrders']);
 
 
 
-// Route::get('/createBatch/{id}', [BatchController::class, 'createBatchOrder']);
 
-// Route::get('/batchByEncounter', [BatchController::class, 'batchByEncounter']);
 
 
 
